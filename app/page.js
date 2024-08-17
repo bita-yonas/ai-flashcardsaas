@@ -180,7 +180,8 @@ export default function Home() {
     </Grid>
   </Grid>
 </Container>
-      {/* Pricing Section */}
+
+{/* Pricing Section */}
       <Container maxWidth="lg" sx={{ mt: 10 }}>
         <Typography variant="h4" component="h2" gutterBottom sx={{ textAlign: 'center' }}>
           Pricing
@@ -201,7 +202,9 @@ export default function Home() {
                 variant="contained"
                 color="success"
                 sx={{ mt: 2 }}
-                onClick={() => handleSubmit('basic')}
+                onClick={() => {
+                  window.location.href = 'https://buy.stripe.com/bIY5mD5p8cnx9G09AA'; // Replace with your actual Stripe payment link for Basic
+                }}
               >
                 Choose Basic
               </Button>
@@ -222,7 +225,9 @@ export default function Home() {
                 variant="contained"
                 color="error"
                 sx={{ mt: 2 }}
-                onClick={() => handleSubmit('pro')}
+                onClick={() => {
+                  window.location.href = 'https://buy.stripe.com/3cs7uL6tccnxdWgbIJ'; // Replace with your actual Stripe payment link for Pro
+                }}
               >
                 Choose Pro
               </Button>
@@ -231,6 +236,9 @@ export default function Home() {
         </Grid>
       </Container>
 
+     
+             
+         
   {/* Footer */}
 <Box sx={{ backgroundColor: '#0d1117', color: 'white', py: 5, mt: 10 }}>
   <Container maxWidth="lg">
