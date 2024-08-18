@@ -174,23 +174,26 @@ export default function Generate() {
             }}
           >
             <TextField 
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-              label="Enter text"
-              fullWidth
-              multiline
-              rows={4}
-              variant="outlined"
-              sx={{ 
-                mb: 2, 
-                backgroundColor: 'rgba(51, 51, 51, 0.85)', // Darker background for text field
-                borderRadius: '8px',
-                input: { color: 'white' }, // White text in input
-              }}
-              InputLabelProps={{
-                style: { color: 'white' }, // White label text
-              }}
-            />  
+  value={text}
+  onChange={(e) => setText(e.target.value)}
+  label="Enter text"
+  fullWidth
+  multiline
+  rows={4}
+  variant="outlined"
+  sx={{ 
+    mb: 2, 
+    backgroundColor: 'rgba(51, 51, 51, 0.85)', // Darker background for text field
+    borderRadius: '8px',
+    input: { color: 'white' }, // White text in input
+    '& .MuiInputBase-input': {
+      color: 'white', // Ensures that the text typed by the user is white
+    },
+  }}
+  InputLabelProps={{
+    style: { color: 'white' }, // White label text
+  }}
+/>
             <Button
   variant="contained"
   color="primary"
