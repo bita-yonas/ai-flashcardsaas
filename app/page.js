@@ -82,7 +82,7 @@ export default function Home() {
   sx={{
     background: 'linear-gradient(to right, #0f2027, #203a43, #2c5364)',
     color: 'white',
-    py: 20, // Increased padding to make the section taller
+    py: 20, 
   }}
 >
   <Container maxWidth="lg">
@@ -111,7 +111,7 @@ export default function Home() {
               px: 4,
               fontSize: '1.2rem',
               textTransform: 'none',
-              mb: 2, // Add margin-bottom to create space below the button
+              mb: 2, 
             }}
             href="/generate" // Redirects to the generate page
           >
@@ -154,7 +154,7 @@ export default function Home() {
     <Grid item xs={12} md={6}>
       <Box
         component="img"
-        src="/fl2.jpg" // Update with your image path
+        src="/fl2.jpg" 
         alt="Create Flashcards from Text"
         sx={{ width: '100%', height: 'auto', borderRadius: 2 }}
       />
@@ -165,7 +165,7 @@ export default function Home() {
     <Grid item xs={12} md={6}>
       <Box
         component="img"
-        src="/fl1.jpg" // Update with your image path
+        src="/fl1.jpg" 
         alt="Start Studying in Seconds"
         sx={{ width: '100%', height: 'auto', borderRadius: 2 }}
       />
@@ -203,7 +203,7 @@ export default function Home() {
                 color="success"
                 sx={{ mt: 2 }}
                 onClick={() => {
-                  window.location.href = 'https://buy.stripe.com/bIY5mD5p8cnx9G09AA'; // Replace with your actual Stripe payment link for Basic
+                  window.location.href = 'https://buy.stripe.com/bIY5mD5p8cnx9G09AA'; 
                 }}
               >
                 Choose Basic
@@ -226,7 +226,7 @@ export default function Home() {
                 color="error"
                 sx={{ mt: 2 }}
                 onClick={() => {
-                  window.location.href = 'https://buy.stripe.com/3cs7uL6tccnxdWgbIJ'; // Replace with your actual Stripe payment link for Pro
+                  window.location.href = 'https://buy.stripe.com/3cs7uL6tccnxdWgbIJ'; 
                 }}
               >
                 Choose Pro
